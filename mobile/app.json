@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "GenieArchi",
+    "slug": "geniearchi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0f172a"
+    },
+    "android": {
+      "package": "com.geniearchi.app",
+      "permissions": ["RECORD_AUDIO"],
+      "adaptiveIcon": {
+        "backgroundColor": "#0f172a"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.geniearchi.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "GenieArchi needs microphone access for voice messages"
+      }
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow GenieArchi to record voice messages"
+        }
+      ]
+    ]
+  }
+}
