@@ -35,7 +35,7 @@ jobs:
 
       - name: Setup Gradle wrapper
         run: |
-          gradle wrapper --gradle-version 8.7
+          gradle wrapper --gradle-version 8.9
 
       - name: Build APK
         run: |
